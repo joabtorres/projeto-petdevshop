@@ -1,0 +1,16 @@
+{{>partials/header}}
+
+<div class="container list">
+{{#animals}}
+   {{>partials/pets}}
+{{/animals}}
+</div>
+
+{{^animals}}
+   <div class="container no-list">
+      <h2>Não há animais disponível nestas condições</h2>
+   </div>
+{{/animals}}
+
+
+{{>partials/footer}}
